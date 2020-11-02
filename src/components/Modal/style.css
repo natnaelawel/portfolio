@@ -1,0 +1,140 @@
+.my__modal__container{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    min-height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__box{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #444444 !important;
+}
+
+.modal__box__header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.modal__box__header button{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.modal__box__content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+.modal__box__content .form__group{
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px !important;
+}
+.form__group label{
+    width: 20%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.form__group input, .form__group textarea{
+    width: 85%;
+}
+input, textarea{
+    /* width: 100%; */
+    outline: none;
+    /* border-radius: 10px; */
+    
+    /* border: none; */
+    padding: 10px 0;
+}
+input{
+    border: none;
+    border-bottom: 1px solid rgb(75, 72, 72);
+}
+
+.form__group textarea{
+    height: 120px;
+    /* border: 1px solid red; */
+}
+
+.sendBtn button{
+    background-color: #00cc00;
+    background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
+
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.progressBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 3px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    margin-right: 10px;
+  }
+.sendBtn button:disabled{
+    cursor: not-allowed;
+}
+
+.error{
+    color: red;
+}
+
+  @keyframes spin {
+    0% { 
+        transform: rotate(0deg);
+}
+    100% { 
+        transform: rotate(360deg);
+    }
+  }  
+
+  @media (max-width: 992px){
+    .modal__box{
+        width: 40vw;
+    }
+}
+  @media (max-width: 768px){
+    .modal__box{
+        width: 65vw;
+    }
+}
+
+  @media (max-width: 550px){
+      .modal__box{
+          width: 80vw;
+      }
+  }

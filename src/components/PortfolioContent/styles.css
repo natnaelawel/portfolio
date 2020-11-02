@@ -1,0 +1,85 @@
+.portfolio__content{
+    min-height: 100vh;
+}
+
+.portfolio__content .title{
+    font-size: 2rem;
+    color: #444444;
+    font-family: 'Lemonada', cursive;
+    
+}
+
+.portfolio__content__section__one, .portfolio__content__section__two{
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+  
+}
+
+.content{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+
+}
+
+.project{
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    max-height: 400px;
+    object-fit: cover;
+    padding: 0;
+    position: relative;
+    transition: all .4s ease-in;
+    font-weight: bold;
+}
+.project:hover .check {
+    /* display: block; */
+    /* display: flex; */
+    opacity: 1;
+}
+
+.project img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.check{
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+.check::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.check a{
+    padding: 0px 20px;
+    transition: all 0.3 ease-in;
+    background-color: white;
+    color: rgb(19, 63, 184);
+    z-index: 200;
+    border: 2px solid rgb(13, 10, 194);
+    display: inline-block;
+    line-height: 50px;
+    transition: all .2s ease-in-out;
+    border-radius: 10px;
+}
+.check a:hover{
+    padding: 10px 20px;
+    transform: scale(1.01);
+}

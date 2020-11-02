@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+.footer{
+    min-height: 100vh;
+    text-align: center;
+    max-width: 100vw;
+    /* margin: 0 auto; */
+    position: relative;
+    background: #210780ad;
+    background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+    /* padding-top: 200px; */
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* border: 1px solid rgb(172, 12, 12); */
+    /* justify-content: center; */
+    align-items: center;
+    /* top: 0; */
+    /* position: sticky; */
+    background-color: white;
+}
+
+
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    /* border: 1px solid white; */
+    flex: 1;
+}
+/* .footer__content__links{ */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */
+.footer__content__links a{
+    margin: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;   
+}
+.footer__content__links a p{
+    margin: 0 20px;
+}
+.footer__content__main{
+    padding: 30px 0;
+}
+
+.footer__content__text{
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Ruda', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    /* border: 1px solid white; */
+    /* font-family: 'Grenze Gotisch', cursive; */
+}
+
+
+.contact__button{
+    border: 1px solid white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.3 ease-in-out;
+}
+.contact__button:hover {
+    background-color: white;
+    transform: scale(0.96);
+    
+}
+.contact__button:hover a{
+    color: #511f97 !important;
+    margin: 0;
+}
+.contact__button a{
+    width: 200px ;
+    padding: 10px 10px;
+
+}
+
+.footer__copyright{
+    height: 100px;
+    background: #0b061b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer__copyright p{
+    font-family: 'Ruda', sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 550px){
+    .footer__content{
+        flex-direction: column-reverse;
+        align-items: center;
+    } 
+    .footer__content__links a{
+        flex-direction: row;
+    }
+
+}
+@media (max-width: 768){
+    .footer__content{
+        flex-direction: column-reverse;
+        align-items: center;
+    } 
+    .footer__content__links a{
+        flex-direction: row;
+    }
+
+}

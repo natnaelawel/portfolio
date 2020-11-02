@@ -1,0 +1,19 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    margin: 0;
+    overflow: auto;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.panel {
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+  }

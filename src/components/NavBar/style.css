@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Ruda&display=swap');
+
+.nav__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 60px;
+    padding: 0 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box !important;
+
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    font-family: 'Ruda', sans-serif;
+}
+
+.brand__name{
+    font-family: 'Grenze Gotisch', cursive;
+    color: white;
+    text-transform: capitalize;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.nav__right{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.nav__links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav__links__item{
+    line-height: 50px;
+    padding: 0 15px;
+    margin: 0 5px;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.nav__links__item::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    left: calc(50% - 15px);
+    clip-path: polygon(0 100%, 50% 50%, 100% 100%) ;
+    bottom: 5px;
+    background-color: white;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+.nav__links__item:hover::after{
+    display: block;
+    /* border-bottom: 3px solid white; */
+    /* border-radius: 10px; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.nav__contact{
+    padding: 5px 0;
+    line-height: 40px;
+    /* display: inline-block; */
+}
+
+.nav__contact button{
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+}
+.nav__contact:hover button{
+    background-color: white;
+    transform: scale(0.98);
+    color: blueviolet !important;
+}
+
+@media (max-width: 992px){
+    .nav__right{
+        width: 70%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    .nav__bar{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .nav__right{
+        min-width: 100vw;
+        align-items: center;
+        padding: 0 20px;
+        flex-direction: row;
+    }
+    .nav__links{
+        object-fit: contain;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__links__item{
+        padding: 0 5px;
+
+    }
+}
+
+@media (max-width: 550px){
+    /* .nav__right{ */
+        /* flex-direction: column; */
+        /* border: 1px solid white; */
+    /* } */
+}
+
+@media (max-width: 400px){
+    .nav__right{
+        flex-direction: column;
+    }
+}
