@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { RoughEase } from "gsap/EasePack";
 import "./styles.css";
-function PortfolioHeader() {
+function PortfolioHeader({ setIsModalOpen }) {
   gsap.registerPlugin(TextPlugin, RoughEase);
   const words = ["You can check my works", "on github."];
   useEffect(() => {
@@ -38,7 +38,7 @@ function PortfolioHeader() {
 
   return (
     <section className="panel header">
-      <NavBar />
+      <NavBar setIsModalOpen={setIsModalOpen} />
       <div className="header__content">
         <div className="header__content__info">
           <h1

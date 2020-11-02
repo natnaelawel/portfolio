@@ -15,11 +15,11 @@ function Home() {
       {isModalOpen ? (
         <MyModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       ) : (
-        <div>
+        <>
           <Services />
           <About id="about" />
           <Footer />
-        </div>
+        </>
       )}
     </div>
   );
