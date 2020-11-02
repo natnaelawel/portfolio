@@ -4,12 +4,17 @@
 .footer{
     min-height: 100vh;
     text-align: center;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     /* margin: 0 auto; */
     position: relative;
     background: #210780ad;
-    background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
+    background-image: linear-gradient(to  top right, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
     clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 0%);
+    /* background-image: url("../../img/undraw_portfolio_website_lidw.svg"); */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     /* padding-top: 200px; */
     display: flex;
     /* flex-direction: column; */

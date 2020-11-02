@@ -5,10 +5,10 @@
 
 .header {
     min-height: auto;
-    background-image: linear-gradient(to right top, #823fcb, #8a4dd1, #915bd6, #9968dc, #a175e1, #8780e6, #6e88e6, #568fe3, #0090d0, #008db4, #008795, #207e78);
+    /* background-image: linear-gradient(to right top, #823fcb, #8a4dd1, #915bd6, #9968dc, #a175e1, #8780e6, #6e88e6, #568fe3, #0090d0, #008db4, #008795, #207e78); */
     background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
    
-    /* background-image: url("/img/undraw_portfolio_website_lidw.svg"); */
+    /* background-image: url("../../../img/undraw_portfolio_website_lidw.svg"); */
     background-size: contain;
     background-position-y: bottom;
     background-position-x: right;
@@ -16,10 +16,12 @@
     color: white;
     position: relative;
     overflow: visible;
+    background-attachment: fixed;
+    /* opacity: 0.3; */
     /* top: 0; */
     /* position: sticky; */
 }
-.header::before{
+.header::after{
     content: "";
     position: absolute;
     top: 0;
@@ -29,21 +31,21 @@
     background-color: white;
     clip-path: polygon(0 100%, 100% 85%, 110% 110%);
     border: 0;
-    /* background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
+    /* background-image: linear-gradient(to top right, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
     /* background-image: url("/img/undraw_web_developer_p3e5.jpg"); */
     /* opacity: 0.8; */
 }
-/* .header::after{ */
-    /* content: ""; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* opacity: 0.6; */
-    /* background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.97;
+    background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
     /* background: url("/img/undraw_web_developer_p3e5.jpg"); */
-/* } */
+}
 .header__content{
     color: white !important;
     display: flex;

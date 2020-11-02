@@ -6,6 +6,7 @@
 html{
     margin: 0;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -16,4 +17,30 @@ body{
     min-height: 100vh;
     position: sticky;
     top: 0;
+  }
+
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* background-image: linear-gradient(to top right, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    background-image: linear-gradient(to top right, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    background-image: linear-gradient(to top right, #530f9c, #490b8f, #4e1199, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
+
   }

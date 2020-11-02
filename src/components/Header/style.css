@@ -5,19 +5,21 @@
 
 .header {
     min-height: auto;
-    background-image: linear-gradient(to right top, #823fcb, #8a4dd1, #915bd6, #9968dc, #a175e1, #8780e6, #6e88e6, #568fe3, #0090d0, #008db4, #008795, #207e78);
-    background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78);
-   
-    /* background-image: url("/img/undraw_portfolio_website_lidw.svg"); */
-    background-size: contain;
-    background-position-y: bottom;
-    background-position-x: right;
+    /* background-image: linear-gradient(to right top, #823fcb, #8a4dd1, #915bd6, #9968dc, #a175e1, #8780e6, #6e88e6, #568fe3, #0090d0, #008db4, #008795, #207e78); */
+    /* background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
+    background-attachment: fixed;
+    /* background-image: url("../../img/undraw_portfolio_website_lidw.svg"); */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     position: relative;
     overflow: visible;
+    min-height: 100vh !important;
     /* top: 0; */
     /* position: sticky; */
+    background-blend-mode: exclusion;
 }
 .header::before{
     content: "";
@@ -26,7 +28,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    /* background-image: url("../../img/undraw_portfolio_website_lidw.svg"); */
+    /* background-position-y: bottom; */
+    /* background-color: white; */
     clip-path: polygon(0 100%, 100% 85%, 110% 110%);
     border: 0;
     /* background-image: linear-gradient(to right bottom, #782acd, #6e27bf, #6425b2, #5a22a4, #511f97, #3c319c, #253d9e, #00469d, #005ba1, #006a97, #007587, #207e78); */
