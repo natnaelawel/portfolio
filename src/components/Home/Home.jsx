@@ -21,6 +21,10 @@ function Home() {
       ease: "elastic.InOut",
     });
   };
+ useEffect(() => {
+    document.title = "Nathaniel Awel"
+  }, [])
+
   useEffect(() => {
     fadeIn()
   }, [isModalOpen])
