@@ -1,9 +1,6 @@
 import React from "react";
 import "./styles.css";
 import image1 from "../../img/clip-programming.png";
-import image2 from "../../img/bg-2.png";
-import image3 from "../../img/image1.png";
-import image4 from "../../img/image4.jpg";
 import covidTracker from "../../img/covid_tracker.jpg";
 import seoBlog from "../../img/seoblog.jpg";
 import memoriesApp from "../../img/memories_app.jpg";
